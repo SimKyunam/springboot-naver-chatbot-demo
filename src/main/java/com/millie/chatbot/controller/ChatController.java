@@ -25,7 +25,7 @@ public class ChatController {
     private static String secretKey = "QVpIeFdXYUx2VXhoT0pac0ljc3NOd2xoaHlxeXRoWnI=";
     private static String apiUrl = "https://70f748ae51384b15a0e571d587afd77b.apigw.ntruss.com/custom/v1/4665/68ce07bc72a6b8d88a4e501289319bb5e160c251bf50fad57143aba112b62f29";
 
-    @MessageMapping("/chat.sendMessage")
+    @MessageMapping("/sendMessage")
     @SendTo("/topic/public")
     public String sendMessage(@Payload String chatMessage) throws IOException
     {
